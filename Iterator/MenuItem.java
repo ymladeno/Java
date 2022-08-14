@@ -16,7 +16,7 @@ public class MenuItem {
     public boolean isVegetarian() { return vegetarian; }
     public double getPrice() { return price; }
 
-    public void print() {
-        System.out.println(name + "\n\t" + description + "\t\t" + price);
+    public String toString() {
+        return name + "\n\t" + description + "\t\t" + price;
     }
 }

@@ -17,5 +17,8 @@ public class PancakeMenu implements Menu {
         menuItems = new ArrayList<MenuItem>();
     }
 
-    public ArrayList<MenuItem> getMenuItems() { return menuItems; }
+    @Override
+    public IteratorMenu createIterator() {
+        return new IteratorPancakeMenu(menuItems);
+    }
 }

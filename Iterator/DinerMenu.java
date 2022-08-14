@@ -12,5 +12,8 @@ public class DinerMenu implements Menu {
         ++position;
     }
 
-    public MenuItem[] getMenuItems() { return menuItems; }
+    @Override
+    public IteratorMenu createIterator() {
+        return new IteratorDinerMenu(menuItems);
+    }
 }
